@@ -1,11 +1,11 @@
-# tts_jd473
+# canary_release_rollback_distribution_profile
 
 **分析语音合成工程师·灰度发布与版本回滚的数值分布并标出离群点。**
 
-`tts_jd473` —— 抽取数值做分布分析，用中位数绝对偏差识别语音合成工程师·灰度发布与版本回滚上的离群点
+`canary_release_rollback_distribution_profile` —— 抽取数值做分布分析，用中位数绝对偏差识别语音合成工程师·灰度发布与版本回滚上的离群点
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`tts_jd473.py` 拷走就能用
+- 单文件，`canary_release_rollback_distribution_profile.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install jdsipp-tts_jd473
+pip install jdsipp-canary_release_rollback_distribution_profile
 ```
 
 装完直接用命令名调用：
 
 ```bash
-tts_jd473 --help
+canary_release_rollback_distribution_profile --help
 ```
 
-也可以不用安装，直接把 `tts_jd473.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `canary_release_rollback_distribution_profile.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ tts_jd473 --help
 ## 用法
 
 ```bash
-python tts_jd473.py --file input.txt
-python tts_jd473.py --text "示例内容"
-python tts_jd473.py --file input.txt --json
+python canary_release_rollback_distribution_profile.py --file input.txt
+python canary_release_rollback_distribution_profile.py --text "示例内容"
+python canary_release_rollback_distribution_profile.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python tts_jd473.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_tts_jd473.py
+python test_canary_release_rollback_distribution_profile.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_tts_jd473.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/jdsipp/tts_jd473>
+- GitHub 仓库：<https://github.com/jdsipp/canary_release_rollback_distribution_profile>
 
 ---
 
@@ -79,7 +79,7 @@ python test_tts_jd473.py
 jdsipp 做语音合成工程师·灰度发布与版本回滚相关的问题，方向对标智谱AI的初级语音合成工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://jdsipp.github.io>
-- 仓库：<https://github.com/jdsipp/tts_jd473>
+- 仓库：<https://github.com/jdsipp/canary_release_rollback_distribution_profile>
 
 ## 许可
 
